@@ -21,7 +21,7 @@ const Main: FC<MainType> = ({ setFileURL }) => {
   });
   return (
     <div className="bg-bgWhite flex items-center justify-center w-screen h-screen">
-      <div className="rounded-lg bg-white border-2 border-white w-[402px] h-[469px] drop-shadow-xl flex flex-col items-center justify-between py-8">
+      <div className="rounded-lg bg-white border-2 border-white w-[290px] h-[469px] sm:w-[402px] sm:h-[469px] drop-shadow-xl flex flex-col items-center justify-between py-8">
         <h1 className="text-2xl text-center font-medium text-title">
           Upload your image
         </h1>
@@ -30,7 +30,7 @@ const Main: FC<MainType> = ({ setFileURL }) => {
         </p>
         <div
           {...getRootProps({ className: "dropzone" })}
-          className="w-[338px] h-[219px] border border-dashed border-blue-300 rounded-lg bg-dropZone flex flex-col justify-evenly items-center"
+          className="sm:w-[338px] sm:h-[219px]  w-[250px] h-[219px] border border-dashed border-blue-300 rounded-lg bg-dropZone flex flex-col justify-evenly items-center "
         >
           <input {...getInputProps()} />
           <img src={image} alt="dropZone" className="w-[115px] h-[89px]" />

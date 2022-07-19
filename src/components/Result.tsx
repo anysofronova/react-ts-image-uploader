@@ -12,7 +12,7 @@ const Result: FC<ResultType> = ({
 }) => {
   return (
     <div className="bg-bgWhite flex items-center justify-center w-screen h-screen flex-col gap-3">
-      <div className="rounded-lg bg-white border-2 border-white w-[402px] h-[469px] drop-shadow-xl flex flex-col items-center justify-between py-8">
+      <div className="rounded-lg bg-white border-2 border-white w-[290px] h-[469px] sm:w-[402px] sm:h-[469px] drop-shadow-xl flex flex-col items-center justify-between py-8">
         <img
           src={checkMark}
           alt="Check Mark"
@@ -22,9 +22,9 @@ const Result: FC<ResultType> = ({
         <img
           src={fileURL}
           alt="Uploaded"
-          className="w-[338px] h-[225px] rounded-xl"
+          className="sm:w-[338px] sm:h-[225px] w-[250px] rounded-xl"
         />
-        <div className="bg-dropZone border border-border w-[338px] h-[34px] rounded-lg py-1 px-0.5 text-title flex justify-between items-center">
+        <div className="bg-dropZone border border-border sm:w-[338px] sm:h-[34px] w-[250px] rounded-lg py-1 px-0.5 text-title flex justify-between items-center">
           <p className="text-[8px] overflow-hidden whitespace-nowrap text-ellipsis">
             {fileURL}
           </p>
